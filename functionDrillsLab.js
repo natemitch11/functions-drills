@@ -226,7 +226,7 @@ let totalFrogs2 = buyFrogs2(40)
 console.log(totalFrogs2);
 
 ////////////////// PROBLEM 14 ////////////////////
-let sampleArray = [0,1,2,3,4,7,5,6,8,9]
+let sampleArray = [0,1,2,3,4,5,6,7,8,9,10,]
 /*
   Write a function that takes in an array of numbers as an argument. In the body of the function, write logic to determine if the array is in ascending order. 
   The function should return true, if it is sorted in ascending order, false if it is not. Create a variable, `arrayIsAscending` and set it equal to your function invoked. 
@@ -235,13 +235,14 @@ let sampleArray = [0,1,2,3,4,7,5,6,8,9]
 
 //CODE HERE
 function testArrayIsAscending(arr) {
-  for (let i = 0; i < arr.length; i++) {
-    if (arr[i] < arr[i + 1]) {
-      return true;    
+  let comparisonValue = arr[0];
+  for (let i = 1; i < arr.length-1; i++) {
+    if (arr[i] <= comparisonValue) {
+      return false;     
     } else {
-      return false; 
+      comparisonValue = arr[i]; 
     }
-  }
+  } return true; 
 }
 let arrayIsAscending = testArrayIsAscending(sampleArray);
 console.log(arrayIsAscending);
