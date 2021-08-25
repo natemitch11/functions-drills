@@ -155,11 +155,11 @@ function bigOrSmall(arr) {
     } else {
       answers.push("small")
     }
-  } return arrayEvaluator = answers
+  } return answers
   
 }
 
-bigOrSmall(bigOrSmallArray);
+let arrayEvaluator = bigOrSmall(bigOrSmallArray);
 console.log(arrayEvaluator)
 
 ////////////////// PROBLEM 10 ////////////////////
@@ -171,18 +171,16 @@ let loser = 'Glimmer'
 */
 
 //CODE HERE
-function theEliminator(contestants, loser) {
-  for (let i = 0; i < contestants.length; i++){
-    if (contestants[i] === loser){
-      contestants.splice(i, 1)
-    } else{
-
-    }
-  }
-  console.log(contestants)
+function theEliminator(arr, arr2) {
+  for (let i = 0; i < arr.length; i++){
+    if (arr[i] === arr2){
+      arr.splice(i, 1)
+    } 
+  } return arr
 }
 
 theEliminator(contestants, loser)
+console.log(contestants)
 
 ////////////////// PROBLEM 11 ////////////////////
 let sampleString = "Hi, my name is Kylo."
