@@ -179,8 +179,8 @@ function theEliminator(arr, arr2) {
   } return arr
 }
 
-theEliminator(contestants, loser)
-console.log(contestants)
+let newContestants = theEliminator(contestants, loser)
+console.log(newContestants)
 
 ////////////////// PROBLEM 11 ////////////////////
 let sampleString = "Hi, my name is Kylo."
